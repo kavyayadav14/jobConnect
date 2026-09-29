@@ -486,3 +486,96 @@ if (homeSearchBtn) {
     });
 
 }
+
+// ========================================
+// AUTHENTICATION STATE
+// ========================================
+
+const currentUser =
+    JSON.parse(localStorage.getItem("currentUser"));
+
+
+// ========================================
+// GET NAVBAR ELEMENTS
+// ========================================
+
+const loginLink =
+    document.getElementById("login-link");
+
+const registerLink =
+    document.getElementById("register-link");
+
+const userName =
+    document.getElementById("user-name");
+
+const logoutLink =
+    document.getElementById("logout-link");
+
+
+// ========================================
+// CHECK LOGIN STATUS
+// ========================================
+
+if (currentUser) {
+
+    // Hide Login and Register
+    if (loginLink) {
+        loginLink.style.display = "none";
+    }
+
+    if (registerLink) {
+        registerLink.style.display = "none";
+    }
+
+
+    // Show User Name
+    if (userName) {
+
+        userName.textContent =
+            "Hello, " + currentUser.name;
+
+        userName.style.display = "inline";
+    }
+
+
+    // Show Logout
+    if (logoutLink) {
+        logoutLink.style.display = "inline";
+    }
+
+} else {
+
+    // User is NOT logged in
+
+    if (userName) {
+        userName.style.display = "none";
+    }
+
+    if (logoutLink) {
+        logoutLink.style.display = "none";
+    }
+
+}
+
+
+// ========================================
+// LOGOUT
+// ========================================
+
+if (logoutLink) {
+
+    logoutLink.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            // Remove logged-in user
+            localStorage.removeItem("currentUser");
+
+            // Go to home page
+            window.location.assign("index.html");
+
+        }
+    );
+}

@@ -698,4 +698,19 @@ footer {
     }
 }
 
+/* ================= AUTH NAVBAR ================= */
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #dc2626;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 
