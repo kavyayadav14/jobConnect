@@ -6,15 +6,23 @@ console.log("main.js is working!");
 // ================================
 
 const featuredJobs = [
+
     {
         id: 1,
         title: "Frontend Developer",
         company: "Tech Solutions",
         location: "Noida",
         salary: "4 - 6 LPA",
+        minSalary: 4,
         experience: "0 - 1 Years",
         type: "Full Time",
-        skills: ["HTML", "CSS", "JavaScript", "React"]
+        category: "frontend",
+        skills: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React"
+        ]
     },
 
     {
@@ -23,9 +31,15 @@ const featuredJobs = [
         company: "ABC Technologies",
         location: "Delhi",
         salary: "5 - 7 LPA",
+        minSalary: 5,
         experience: "0 - 1 Years",
         type: "Full Time",
-        skills: ["Java", "SQL", "Spring Boot"]
+        category: "backend",
+        skills: [
+            "Java",
+            "SQL",
+            "Spring Boot"
+        ]
     },
 
     {
@@ -34,10 +48,71 @@ const featuredJobs = [
         company: "WebTech Pvt. Ltd.",
         location: "Gurugram",
         salary: "6 - 8 LPA",
+        minSalary: 6,
         experience: "0 - 2 Years",
         type: "Full Time",
-        skills: ["JavaScript", "React", "Node.js", "MongoDB"]
+        category: "fullstack",
+        skills: [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+
+    {
+        id: 4,
+        title: "Data Analyst",
+        company: "DataWorks",
+        location: "Noida",
+        salary: "4 - 6 LPA",
+        minSalary: 4,
+        experience: "0 - 1 Years",
+        type: "Full Time",
+        category: "data",
+        skills: [
+            "SQL",
+            "Python",
+            "Excel"
+        ]
+    },
+
+    {
+        id: 5,
+        title: "React Developer",
+        company: "Innovate Labs",
+        location: "Delhi",
+        salary: "5 - 8 LPA",
+        minSalary: 5,
+        experience: "0 - 2 Years",
+        type: "Full Time",
+        category: "frontend",
+        skills: [
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    },
+
+    {
+        id: 6,
+        title: "Node.js Developer",
+        company: "CloudTech",
+        location: "Gurugram",
+        salary: "6 - 9 LPA",
+        minSalary: 6,
+        experience: "1 - 2 Years",
+        type: "Full Time",
+        category: "backend",
+        skills: [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "REST API"
+        ]
     }
+
 ];
 
 
