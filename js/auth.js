@@ -134,3 +134,140 @@ if (registerForm) {
     });
 
 }
+
+// ========================================
+// LOGIN USER
+// ========================================
+
+const loginForm =
+    document.getElementById("login-form");
+
+
+if (loginForm) {
+
+    loginForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            // ========================================
+            // GET LOGIN VALUES
+            // ========================================
+
+            const email =
+                document
+                    .getElementById("login-email")
+                    .value
+                    .trim()
+                    .toLowerCase();
+
+
+            const password =
+                document
+                    .getElementById("login-password")
+                    .value;
+
+
+            const message =
+                document.getElementById(
+                    "login-message"
+                );
+
+
+            // ========================================
+            // VALIDATION
+            // ========================================
+
+            if (!email || !password) {
+
+                message.textContent =
+                    "Please enter email and password.";
+
+                return;
+            }
+
+
+            // ========================================
+            // GET USERS
+            // ========================================
+
+            const users =
+                JSON.parse(
+                    localStorage.getItem("users")
+                ) || [];
+
+
+            // ========================================
+            // FIND USER
+            // ========================================
+
+            const user =
+                users.find(function (user) {
+
+                    return user.email === email;
+
+                });
+
+
+            // ========================================
+            // CHECK USER
+            // ========================================
+
+            if (!user) {
+
+                message.textContent =
+                    "No account found with this email.";
+
+                return;
+            }
+
+
+            // ========================================
+            // CHECK PASSWORD
+            // ========================================
+
+            if (user.password !== password) {
+
+                message.textContent =
+                    "Incorrect password.";
+
+                return;
+            }
+
+
+            // ========================================
+            // SAVE LOGGED-IN USER
+            // ========================================
+
+            localStorage.setItem(
+                "currentUser",
+                JSON.stringify(user)
+            );
+
+
+            // ========================================
+            // SUCCESS
+            // ========================================
+
+            message.textContent =
+                "Login successful!";
+
+
+            // ========================================
+            // REDIRECT
+            // ========================================
+
+            setTimeout(function () {
+
+                window.location.assign(
+                    "index.html"
+                );
+
+            }, 500);
+
+        }
+    );
+
+}
