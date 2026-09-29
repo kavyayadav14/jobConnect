@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JobConnect - My Profile</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                JobConnect
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Companies
+                    </a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        My Applications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="nav-buttons">
+
+                <a href="login.html"
+                   class="login-btn"
+                   id="login-link">
+                    Login
+                </a>
+
+                <a href="register.html"
+                   class="register-btn"
+                   id="register-link">
+                    Register
+                </a>
+
+                <span id="user-name"
+                      class="user-name">
+                </span>
+
+                <a href="#"
+                   id="logout-link"
+                   class="logout-btn">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <main>
+
+        <section class="profile-section">
+
+            <div class="profile-container">
+
+                <div class="profile-heading">
+
+                    <h1>
+                        My Profile
+                    </h1>
+
+                    <p>
+                        Manage your personal information
+                    </p>
+
+                </div>
+
+
+                <form id="profile-form">
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label for="profile-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profile-name"
+                            placeholder="Enter your full name"
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="profile-email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="profile-email"
+                            placeholder="Enter your email"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="profile-phone">
+                            Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="profile-phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <div class="form-group">
+
+                        <label for="profile-location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profile-location"
+                            placeholder="Enter your location"
+                        >
+
+                    </div>
+
+
+                    <!-- Skills -->
+
+                    <div class="form-group">
+
+                        <label for="profile-skills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profile-skills"
+                            placeholder="Example: HTML, CSS, JavaScript, React"
+                        >
+
+                    </div>
+
+
+                    <!-- About -->
+
+                    <div class="form-group">
+
+                        <label for="profile-about">
+                            About Me
+                        </label>
+
+                        <textarea
+                            id="profile-about"
+                            rows="5"
+                            placeholder="Write something about yourself"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Save Button -->
+
+                    <button
+                        type="submit"
+                        class="profile-btn">
+                        Save Profile
+                    </button>
+
+
+                    <!-- Message -->
+
+                    <p
+                        id="profile-message"
+                        class="profile-message">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>JobConnect</h2>
+
+                <p>
+                    Connecting job seekers with career opportunities.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+                <a href="applications.html">
+                    My Applications
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>For Recruiters</h3>
+
+                <a href="recruiter-dashboard.html">
+                    Recruiter Dashboard
+                </a>
+
+                <a href="post-job.html">
+                    Post a Job
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 JobConnect. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
