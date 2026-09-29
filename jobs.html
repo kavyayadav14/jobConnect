@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs - JobConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                JobConnect
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        My Applications
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================================
+         JOBS PAGE
+    ================================= -->
+
+    <main>
+
+        <section class="categories">
+
+            <!-- Page Heading -->
+
+            <div class="section-heading">
+
+                <h2>Find Your Next Job</h2>
+
+                <p>
+                    Explore available job opportunities.
+                </p>
+
+            </div>
+
+
+            <!-- ================================
+                 SEARCH & FILTER
+            ================================= -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="job-search"
+                    placeholder="Search by job title, skill or company"
+                >
+
+
+                <input
+                    type="text"
+                    id="location-filter"
+                    placeholder="Location"
+                >
+
+
+                <select id="category-filter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="frontend">
+                        Frontend Development
+                    </option>
+
+                    <option value="backend">
+                        Backend Development
+                    </option>
+
+                    <option value="fullstack">
+                        Full Stack Development
+                    </option>
+
+                    <option value="data">
+                        Data & Analytics
+                    </option>
+
+                </select>
+
+
+                <select id="sort-jobs">
+
+                    <option value="default">
+                        Sort By
+                    </option>
+
+                    <option value="salary-low">
+                        Salary: Low to High
+                    </option>
+
+                    <option value="salary-high">
+                        Salary: High to Low
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ================================
+                 JOB COUNT
+            ================================= -->
+
+            <p
+                id="job-count"
+                style="margin: 25px 0; font-weight: 600;"
+            >
+            </p>
+
+
+            <!-- ================================
+                 JOB CONTAINER
+            ================================= -->
+
+            <div
+                id="jobs-container"
+                class="job-container"
+            >
+
+                <!-- JavaScript will display jobs here -->
+
+            </div>
+
+
+            <!-- ================================
+                 NO JOBS MESSAGE
+            ================================= -->
+
+            <p
+                id="no-jobs-message"
+                style="display: none; text-align: center; margin-top: 30px;"
+            >
+                No jobs found.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 JobConnect. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script src="js/jobs.js"></script>
+
+</body>
+
+</html>
+

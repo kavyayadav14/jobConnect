@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobConnect - Find Your Dream Job</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                JobConnect
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="applications.html">My Applications</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Find Your
+                    <span>Dream Job</span>
+                </h1>
+
+                <p>
+                    Discover the right opportunity and take
+                    the next step in your career.
+                </p>
+
+                <!-- Job Search -->
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="home-job-search"
+                        placeholder="Job title, skills or keywords"
+                    >
+
+                    <input
+                        type="text"
+                        id="home-location-search"
+                        placeholder="Location"
+                    >
+                    
+                    <button id="home-search-btn">
+                        Search Jobs
+                    </button>
+                  
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+        <section class="categories">
+
+            <div class="section-heading">
+                <h2>Popular Job Categories</h2>
+
+                <p>
+                    Explore opportunities based on your skills
+                </p>
+            </div>
+
+
+            <div class="category-container">
+
+                <a href="jobs.html?category=frontend" class="category-card">
+                    <h3>Frontend Development</h3>
+                    <p>React, JavaScript, HTML, CSS</p>
+                </a>
+
+                <a href="jobs.html?category=backend" class="category-card">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Java, Python, APIs</p>
+                </a>
+
+                <a href="jobs.html?category=fullstack" class="category-card">
+                    <h3>Full Stack Development</h3>
+                    <p>Frontend + Backend</p>
+                </a>
+
+                <a href="jobs.html?category=data" class="category-card">
+                    <h3>Data & Analytics</h3>
+                    <p>SQL, Python, Data Analysis</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED JOBS ================= -->
+        <section class="featured-jobs">
+
+            <div class="section-heading">
+
+                <h2>Featured Jobs</h2>
+
+                <p>
+                    Explore some of the latest opportunities
+                </p>
+
+            </div>
+
+
+            <div id="featured-jobs-container" class="job-container">
+
+                <!-- JavaScript will add job cards here -->
+
+            </div>
+
+
+            <div class="view-all">
+
+                <a href="jobs.html">
+                    View All Jobs →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>JobConnect</h2>
+
+                <p>
+                    Connecting job seekers with career opportunities.
+                </p>
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>For Recruiters</h3>
+
+                <a href="recruiter-dashboard.html">
+                    Recruiter Dashboard
+                </a>
+
+                <a href="post-job.html">
+                    Post a Job
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 JobConnect. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Applications - JobConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                JobConnect
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">Jobs</a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        My Applications
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================================
+         APPLICATIONS SECTION
+    ================================= -->
+
+    <main>
+
+        <section class="job-details-section">
+
+            <div class="section-heading">
+
+                <h2>My Applications</h2>
+
+                <p>
+                    Track the jobs you have applied for.
+                </p>
+
+            </div>
+
+
+            <!-- Applications will appear here -->
+
+            <div
+                id="applications-container"
+                class="job-container"
+            >
+
+            </div>
+
+
+            <!-- No applications message -->
+
+            <p
+                id="no-applications-message"
+                style="text-align: center;"
+            >
+                No applications found.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 JobConnect. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/storage.js"></script>
+    <script src="js/applications.js"></script>
+
+</body>
+
+</html>
