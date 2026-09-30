@@ -254,6 +254,25 @@ function displayJobs(jobList) {
 
         button.addEventListener("click", () => {
 
+        // ========================================
+        // CHECK LOGIN
+        // ========================================
+
+        const currentUser =
+            JSON.parse(
+                localStorage.getItem("currentUser")
+            );
+
+        if (!currentUser) {
+
+            alert("Please login to save a job.");
+
+            window.location.assign("login.html");
+
+            return;
+        }
+
+
         const jobId =
             Number(button.dataset.jobId);
 
@@ -266,6 +285,7 @@ function displayJobs(jobList) {
             JSON.parse(
                 localStorage.getItem("savedJobs")
             ) || [];
+
 
 
         // ========================================
