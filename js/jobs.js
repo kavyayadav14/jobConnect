@@ -228,12 +228,108 @@ function displayJobs(jobList) {
                 View Details
             </button>
 
+            <button
+                class="save-job-btn"
+                data-job-id="${job.id}"
+            >
+               Save Job
+            </button>
+
         `;
 
 
         jobsContainer.append(jobCard);
 
     });
+
+    // ========================================
+    // SAVE JOB BUTTONS
+    // ========================================
+
+     const saveButtons =
+       document.querySelectorAll(".save-job-btn");
+
+
+        saveButtons.forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+        const jobId =
+            Number(button.dataset.jobId);
+
+
+        // ========================================
+        // GET SAVED JOBS
+        // ========================================
+
+        const savedJobs =
+            JSON.parse(
+                localStorage.getItem("savedJobs")
+            ) || [];
+
+
+        // ========================================
+        // CHECK IF JOB ALREADY SAVED
+        // ========================================
+
+        const alreadySaved =
+            savedJobs.some((job) => {
+
+                return job.id === jobId;
+
+            });
+
+
+        if (alreadySaved) {
+
+            alert("Job is already saved.");
+
+            return;
+
+        }
+
+
+        // ========================================
+        // FIND JOB
+        // ========================================
+
+        const job =
+            jobs.find((job) => {
+
+                return job.id === jobId;
+
+            });
+
+
+        if (!job) {
+
+            return;
+
+        }
+
+
+        // ========================================
+        // SAVE JOB
+        // ========================================
+
+        savedJobs.push(job);
+
+
+        localStorage.setItem(
+            "savedJobs",
+            JSON.stringify(savedJobs)
+        );
+
+
+        // ========================================
+        // SUCCESS MESSAGE
+        // ========================================
+
+        alert("Job saved successfully!");
+
+    });
+
+});
 
 
     // ========================================
